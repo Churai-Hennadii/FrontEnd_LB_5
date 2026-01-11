@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Завдання 1 — Варіант 9</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="col left">
+      <h2>Форма для заповнення</h2>
+
+      <form id="form" onsubmit="return Formdata(this)" novalidate>
+        <div class="field" id="f_pib">
+          <input id="pib" name="pib" type="text" placeholder="ПІБ">
+        </div>
+
+        <div class="field" id="f_group">
+          <input id="group" name="group" type="text" placeholder="Група">
+        </div>
+
+        <div class="field" id="f_variant">
+          <input id="variant" name="variant" type="number" placeholder="Варіант" min="1" max="99" step="1">
+        </div>
+
+        <div class="field" id="f_faculty">
+          <input id="faculty" name="faculty" type="text" placeholder="Факультет">
+        </div>
+
+        <div class="field" id="f_bdate">
+          <input id="bdate" name="bdate" type="text" placeholder="Дата народж.">
+        </div>
+
+        <button type="submit">Підтвердити</button>
+      </form>
+    </div>
+
+    <div class="col right">
+      <h2>Введені дані</h2>
+
+      <p><b>ПІБ:</b> <span id="out_pib"></span></p>
+      <p><b>Група:</b> <span id="out_group"></span></p>
+      <p><b>Варіант:</b> <span id="out_variant"></span></p>
+      <p><b>Факультет:</b> <span id="out_faculty"></span></p>
+      <p><b>Дата народж.:</b> <span id="out_bdate"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

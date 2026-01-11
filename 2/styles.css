@@ -1,0 +1,54 @@
+:root { font-family: system-ui, Arial, sans-serif; }
+
+body {
+  display: grid;
+  place-items: start center;
+  padding: 24px;
+  gap: 14px;
+}
+
+.palette {
+  width: min(520px, 90vw);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 2px solid #9aa0a6;
+  border-radius: 6px;
+  background: #f8f9fa;
+}
+
+.palette input[type="color"]{
+  width: 56px;
+  height: 36px;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hint { color: #444; font-size: 14px; }
+.hint b { font-weight: 700; }
+
+table {
+  border-collapse: collapse;
+  user-select: none;
+}
+
+td {
+  width: 58px;
+  height: 52px;
+  border: 1px solid #333;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: 600;
+  background: #fff;
+  transition: background-color .12s ease;
+  cursor: default;
+}
+
+td.variant {
+  outline: 3px solid rgba(0,0,0,.08);
+  cursor: pointer;
+}
